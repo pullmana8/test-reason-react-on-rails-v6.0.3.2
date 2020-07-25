@@ -1,24 +1,45 @@
-# README
+# Tesing react_on_rails gem in a Rails app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> Ruby version
 
-Things you may want to cover:
+`ruby --version`
 
-* Ruby version
+ruby 2.7.1p83 (2020-03-31 revision a0c7c23c9c) [x86_64-linux]
 
-* System dependencies
+`rails --version`
 
-* Configuration
+Rails 6.0.3.2
 
-* Database creation
+> System dependencies
 
-* Database initialization
+> Configuration
 
-* How to run the test suite
+`rails new test-react-on-rails --webpack=react`
 
-* Services (job queues, cache servers, search engines, etc.)
+`cd test-react-on-rails`
 
-* Deployment instructions
+`echo 'gem "rspec-rails", group: [:development, :test]' >> Gemfile`
 
-* ...
+bundle install
+
+commit your changes
+
+`rails generate rspec:install`
+
+`echo 'gem "react_on_rails", "~> 12.0", ">= 12.0.1"' >> Gemfile`
+
+bundle install
+
+stage and commit your changes
+
+`rails generate react_on_rails:install`
+
+> Database creation
+
+> Database initialization
+
+> How to run the test suite
+
+> Services (job queues, cache servers, search engines, etc.)
+
+> Deployment instructions

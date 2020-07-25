@@ -54,3 +54,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "rspec-rails", group: [:development, :test]
 gem "react_on_rails", "~> 12.0", ">= 12.0.1"
+
+gem 'mini_racer', platforms: :ruby
